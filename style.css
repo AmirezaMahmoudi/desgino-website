@@ -118,6 +118,26 @@ main{
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
+.btn_secondary{
+    background-color: var(--peach);
+    border: none;
+    width: 152px;
+    height: 56px;
+    border-radius: 10px;
+    margin: 10px 0 20px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 21.68px;
+    color: var(--white);
+    transition: all 0.3s ease-in;
+}
+.btn_secondary:hover{
+    background-color: hsla(10, 100%, 80%, 1);
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
 .hero__img{
     width: 284px;
     height: 375px;
@@ -170,7 +190,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: -150px;
+    margin-top: 120px;
 }
 .skill__card{
     display: flex;
@@ -283,6 +303,80 @@ footer {
     transform: scale(1.2);
 }
 /* -----------FOOTER------- */
+/* -------------------------------------------------HOMEPAGE--------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------ABOUT US--------------------------------------------------------------------- */
+.about{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--peach);
+}
+.about__text{
+background: url("./assets/about/desktop/bg-pattern-hero-about-desktop.svg") no-repeat;
+color: var(--white);
+}
+.about__text__head{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.about__text__paragraph{
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+.talent {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--very-light-peach);
+}
+.talent__text__head{
+    color: var(--peach);
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.talent__text__paragraph{
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 45px 0;
+    gap: 15px;
+}
+.location img{
+    background: url("./assets/shared/desktop/bg-pattern-small-circle.svg") no-repeat;
+}
+.location h1{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 26px;
+    margin: 20px 0;
+}
+.location button {
+    margin: 20px 0;
+}
+/* -------------------------------------------------RESPONSIVE--------------------------------------------------------------------- */
+
 @media only screen and (min-width: 768px) {
     .header__menu.active{
         display: flex;
