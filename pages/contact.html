@@ -7,7 +7,7 @@
     <meta name="author" content="Amirreza Mahmoudi">
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style.css">
-    <title>Designo | Locations</title>
+    <title>Designo | Contact</title>
 </head>
 <body>
     <header>
@@ -25,54 +25,47 @@
         </ul>
     </header>
     <main>
-        <section class="location_cards">
-            <section class="location_cards__text">
-                <h1>CANADA</h1>
-               <h2>Designo Central Office</h2>
-                <p> 3886 Wellington Street</p>
-                <p>Toronto, Ontario M9C 3J5</p>
-                <h3>Contact</h3>
-                <p>P : +1 253-863-8967 </p>
-                <p>M : contact@designo.co</p>
+        <section class="form">
+            <section class="form__text">
+                <h1>Contact Us</h1>
+            <p>
+                Ready to take it to the next level? Let’s talk about your project or idea and find out
+                how we can help your business grow. If you are looking for unique digital experiences that’s
+                relatable to your users, drop us a line.
+            </p>
             </section>
-            <img src="../assets/locations/desktop/image-map-canada.png" alt=" canada location">
-        </section>
-
-        <section class="location_cards">
-            <section class="location_cards__text">
-                <h1>AUSTRALIA</h1>
-               <h2>Designo AU Office</h2>
-                <p> 19 Balonne Street </p>
-                <p>New South Wales 2443</p>
-                <h3>Contact</h3>
-                <p>P : (02) 6720 9092 </p>
-                <p>M : contact@designo.au</p>
-            </section>
-            <img src="../assets/locations/desktop/image-map-australia.png" alt=" austrailia location">
-        </section>
-
-
-
-        <section class="location_cards">
-            <section class="location_cards__text">
-                <h1>UNITED KINGDOM</h1>
-               <h2>Designo UK Office</h2>
-                <p> 13 Colardo Ways</p>
-                <p>Rhyd-y-fro SA8 9GA</p>
-                <h3>Contact</h3>
-                <p>P : 078 3115 1400 </p>
-                <p>M : contact@designo.uk</p>
-            </section>
-            <img src="../assets/locations/desktop/image-map-united-kingdom.png" alt=" united kingdom location">
-        </section>
-
-        <section class="contact">
-            <section class="contact__box">
-                <section class="contact__text">
-                    <h1 class="contact__text__head">Let’s talk about your project</h1>
-                    <p class="contact__text__paragraph">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+            <form   id="contact-form">
+                <section class="form_field">
+                    <input type="text" placeholder="Name"><span class="err">Can't be empty <img src="../assets/contact/desktop/icon-error.svg" alt="icon-error"></span>
                 </section>
-                <a href=""><button class="btn">GET IN TOUCH</button></a>
+                <section class="form_field">
+                    <input type="email" placeholder="Email"><span class="err">Can't be empty <img src="../assets/contact/desktop/icon-error.svg" alt="icon-error"></span>
+                </section>
+                <section class="form_field">
+                    <input type="number" placeholder="Phone"><span class="err">Can't be empty <img src="../assets/contact/desktop/icon-error.svg" alt="icon-error"></span>
+                </section>
+                <section class="form_field">
+                    <textarea placeholder="Your message"></textarea> <span class="err">Can't be empty <img src="../assets/contact/desktop/icon-error.svg" alt="icon-error"></span>
+                </section>
+                <button class="btn" id="submit" type="submit" form="contact-form">SUBMIT</button>
+            </form>
+        </section>
+
+        <section class="location">
+            <section>
+                <img src="../assets/shared/desktop/illustration-canada.svg" alt=" illustration-canada">
+                <h1>CANADA</h1>
+                <a href=""><button class="btn_secondary">SEE LOCATION</button></a>
+            </section>
+            <section>
+                <img src="../assets/shared/desktop/illustration-australia.svg" alt=" illustration-australia">
+                <h1>AUSTRALIA</h1>
+                <a href=""><button class="btn_secondary">SEE LOCATION</button></a>
+            </section>
+            <section>
+                <img src="../assets/shared/desktop/illustration-united-kingdom.svg" alt=" illustration-united-kingdom">
+                <h1>UNITED KINGDOM</h1>
+                <a href=""><button class="btn_secondary">SEE LOCATION</button></a>
             </section>
         </section>
     </main>
