@@ -463,6 +463,90 @@ textarea:focus , textarea:active{
 }
 
 /* -------------------------------------------------CONTACT--------------------------------------------------------------------- */
+/* -------------------------------------------------Design--------------------------------------------------------------------- */
+.design_hero{
+    background: url("./assets/web-design/desktop/bg-pattern-intro-web.svg") no-repeat , var(--peach);
+    color: var(--white);
+    text-align: center;
+    padding: 45px 20px;
+    margin-bottom: 50px;
+}
+.design_hero h1{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 35px;
+}
+.design_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.design_cards{
+    border-radius: 15px;
+    background-color: var(--very-light-peach);
+    text-align: center;
+    width: 327px;
+    height: 478px ;
+    margin: 40px;
+    cursor: pointer;
+    color: var(--semi-black);
+}
+
+.design_cards_content{
+    padding: 20px;
+}
+.design_cards_content h1{
+     color: var(--peach);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.design_cards:hover{
+    background-color: var(--peach);
+    color: var(--white);
+    scale: 1.02;
+    transition: all 0.4s ease-in-out;
+}
+.design_cards:hover .design_cards_content h1,
+.design_cards:hover .design_cards_content p {
+    color: #fff;
+}
+
+.design_cards_content{
+    padding: 20px;
+}
+.design_cards figure img {
+    border-radius: 15px 15px 0 0;
+    width: 327px;
+    height: 320px;
+}
+.design_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+}
+.design_links_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 327px;
+    height: 250px;
+    border-radius: 15px;
+}
+.design_content{
+    color: var(--white);
+}
+/* -------------------------------------------------Design--------------------------------------------------------------------- */
 
 /* -------------------------------------------------RESPONSIVE--------------------------------------------------------------------- */
 
@@ -580,6 +664,8 @@ textarea:focus , textarea:active{
     .web_design{
         background: url("./assets/home/desktop/image-web-design-large.jpg") no-repeat ;
         background-size: cover;
+    }
+    #web_design{
         height: 640px;
     }
     .grid_container{
