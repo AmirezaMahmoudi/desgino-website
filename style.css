@@ -99,6 +99,7 @@ main{
     margin: 20px 45px;
 }
 .btn{
+    text-transform: uppercase;
     border: none;
     background-color: var(--white);
     width: 152px;
@@ -172,15 +173,15 @@ main{
     letter-spacing: 5px;
 }
 .web_design{
-    background: url("./assets/home/desktop/image-web-design-small.jpg") no-repeat ;
+    background: url("./assets/home/desktop/image-web-design-small.webp") no-repeat ;
     background-size: cover;
 }
 .app_design{
-    background: url("./assets/home/desktop/image-app-design.jpg")  no-repeat;
+    background: url("./assets/home/desktop/image-app-design.webp")  no-repeat;
     background-size: cover;
 }
 .graphic_design{
-    background: url("./assets/home/desktop/image-graphic-design.jpg") no-repeat ;
+    background: url("./assets/home/desktop/image-graphic-design.webp") no-repeat ;
     background-size: cover;
 }
 /* -------PROJECT-------- */
@@ -353,6 +354,27 @@ color: var(--white);
     padding: 10px;
     margin: 10px;
 }
+.deal {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--very-light-peach);
+}
+.deal__text__head{
+    color: var(--peach);
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.deal__text__paragraph{
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px;
+    margin: 10px;
+}
 .location{
     display: flex;
     flex-direction: column;
@@ -382,11 +404,12 @@ color: var(--white);
     flex-direction: column-reverse;
     text-align: center;
     margin-bottom: 45px;
-    background-color: var(--very-light-peach);
     padding-bottom: 35px;
 }
 .location_cards__text{
-    background: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
+    background: url("/assets/shared/desktop/bg-pattern-two-circles.svg") var(--very-light-peach);
+    border-radius: 15px;
+    padding-bottom: 20px;
 }
 .location_cards__text h1{
     color: var(--peach);
@@ -485,11 +508,14 @@ textarea:focus , textarea:active{
     margin-bottom: 20px;
 }
 .design_cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 15px;
     background-color: var(--very-light-peach);
     text-align: center;
     width: 327px;
-    height: 478px ;
+    height: 427px ;
     margin: 40px;
     cursor: pointer;
     color: var(--semi-black);
@@ -594,6 +620,80 @@ textarea:focus , textarea:active{
     .skill__text{
         text-align: left;
     }
+    .about{
+        border-radius: 15px;
+        margin: 40px;
+    }
+    .about img{
+        border-radius: 15px 15px 0 0;
+    }
+    .form__text{
+        padding: 50px;
+    }
+    .form__text h1{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .talent{
+        border-radius: 15px;
+        margin: 40px;
+    }
+    .deal{
+        border-radius: 15px;
+        margin: 40px;
+    }
+    .talent img{
+        border-radius: 15px 15px 0 0;
+    }
+    .deal img{
+        border-radius: 15px 15px 0 0;
+    }
+    .design_cards {
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        width: 568px;
+        height: 321px;
+    }
+    .design_cards_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .design_cards figure img {
+        border-radius: 15px 0 0 15px;
+        height: 321px;
+    }
+    .location_cards img{
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+    .location_cards__text{
+        padding: 20px;
+    }
+    .location_cards__text_head{
+        text-align: left;
+        padding: 0 85px;
+    }
+    .location_cards__text_body{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .form {
+        border-radius: 15px;
+    }
+    .form__text{
+        text-align: left;
+    }
+    .design_hero{
+        border-radius: 15px;
+    }
+    .design_links_card{
+        width: 80%;
+    }
     footer {
         display: flex;
         align-items: flex-start;
@@ -614,7 +714,7 @@ textarea:focus , textarea:active{
         border: none;
     }
     .footer__nav ul li{
-       margin: 0 2rem;
+       margin: 0 1.1rem;
     }
     .info {
         flex-direction: row;
@@ -629,6 +729,12 @@ textarea:focus , textarea:active{
         align-self: flex-end;
     }
 }
+
+
+
+
+
+
 @media only screen and (min-width: 1024px){
     header{
         padding: 35px 150px;
@@ -642,10 +748,45 @@ textarea:focus , textarea:active{
         justify-content: space-between;
         text-align: left;
     }
+    .about{
+        flex-direction: row;
+    }
+    .about__text{
+        padding-left: 45px;
+        text-align: left;
+    }
+    .about__text__head{
+        padding-left: 30px;
+    }
+    .talent{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+    .talent__text__head{
+        padding-left: 10px ;
+    }
+    .talent img {
+        border-radius: 15px 0 0 15px;
+    }
+
+
+    .deal{        flex-direction: row;
+        text-align: left;
+    }
+    .deal__text{
+        padding-left: 20px ;
+    }
+    .deal img {
+        border-radius: 0 15px 15px 0;
+    }
+    .deal__text__head{
+        padding-left: 20px;
+    }
     .hero__text{
         width: 540px;
         margin-right: 20px;
-        }
+    }
     .hero__text__head{
         margin: 20px 0;
     }
@@ -662,7 +803,7 @@ textarea:focus , textarea:active{
         border-radius: 12px;
     }
     .web_design{
-        background: url("./assets/home/desktop/image-web-design-large.jpg") no-repeat ;
+        background: url("./assets/home/desktop/image-web-design-large.webp") no-repeat ;
         background-size: cover;
     }
     #web_design{
@@ -705,6 +846,47 @@ textarea:focus , textarea:active{
     }
     .contact__text__head{
         padding: 0 20px;
+    }
+    .design_cards{
+        flex-direction: column;
+        width: 350px;
+        height: 478px;
+    }
+    .design_cards figure img {
+        width: 350px;
+        height: 320px;
+        border-radius: 15px 15px 0 0;
+    }
+    .design_container{
+        --auto-grid-min-size: 350px;
+        display: grid;
+        grid-template-columns:repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .form{
+        flex-direction: row;
+    }
+    .location{
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 2.5rem;
+        margin: 45px 0;
+    }
+    .location_cards{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .location_cards:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    .location_cards__text{
+        width: 730px;
+        height: 326px;
+    }
+    .design_links{
+        flex-direction: row;
     }
     .contact__text__paragraph{
         padding-left:  20px;
