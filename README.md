@@ -4,16 +4,12 @@ This is a solution to the [Designo multi-page website challenge on Frontend Ment
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Overview](#overview)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 This one was a big project for me i wanted to showcase my web designing abilites using the foundation of web development vanila HTML / CSS/ JS.
@@ -33,7 +29,6 @@ Users should be able to:
 - [Designo Live Link](https://amirezamahmoudi.github.io/desgino-website/)
 
 ## My process
-
 ### Built with
 
 - HTML
@@ -43,9 +38,6 @@ Users should be able to:
 - Mobile-First workflow
 
 ### Continued development
-
-
-
 This Project is considered finished on an acceptable level but there are some areas i can improve and will do like :
 
  - Use map API for locations  
